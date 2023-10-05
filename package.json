@@ -1,0 +1,23 @@
+{
+  "name": "wordle",
+  "version": "0.0.1",
+  "description": "Word guessing game",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+nhttps://github.com/liber09/Wordle.git"
+  },
+  "type": "module",
+  "author": "Linda Bergsängel",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
