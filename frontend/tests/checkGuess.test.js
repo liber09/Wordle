@@ -1,5 +1,5 @@
 import { describe, expect, test } from "@jest/globals";
-import { checkGuess } from "../../backend/src/checkGuess.js";
+import { checkGuess } from "../src/checkGuess";
 
 /*
     My test stategy is to test all possible outcomes that 

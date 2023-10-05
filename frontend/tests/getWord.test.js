@@ -1,5 +1,5 @@
 import { describe, expect, test } from "@jest/globals";
-import { getWord } from "../src/getWord.js";
+import { getWord } from "../src/getWord";
 
 /*
 	Test strategy.

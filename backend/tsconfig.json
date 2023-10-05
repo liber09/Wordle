@@ -1,0 +1,8 @@
+{
+    "coNODE_OPTIONS=--experimental-vm-modules npx jestmpilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "esModuleInterop": true,
+    }
+  }
+  
