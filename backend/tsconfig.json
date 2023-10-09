@@ -1,8 +1,11 @@
 {
-    "coNODE_OPTIONS=--experimental-vm-modules npx jestmpilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
-      "esModuleInterop": true,
-    }
-  }
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es6",
+    "module": "ES6",
+  },
+  "ts-node": {
+    "esm": true, // «———— enabling ESM for ts-node   
+  }, 
+}
   

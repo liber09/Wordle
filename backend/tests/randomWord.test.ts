@@ -12,8 +12,7 @@ describe("GetWord(wordLength, excludeDuplicates, words)", () => {
   const words = ["Action", "tomato", "accept", "queen", "advance", "fantasy"];
 
   test("should return random word from array", () => {
-    const result = getRandomWord(7, false, words);
-    console.log(result);
+    const result = getRandomWord(Math.floor(7), false, words);
     expect(words).toContain(result);
   });
 
@@ -23,10 +22,13 @@ describe("GetWord(wordLength, excludeDuplicates, words)", () => {
     expect(result).not.toEqual("Action");
   });
 
-  test("should use parameter 'excludeDuplicatedLetters' to exclude letters that contain letters more than once", () => {
+  test("should use parameter 'excludeDuplicates' to exclude words that contain letters more than once", () => {
     const result = getRandomWord(6, true, words);
     expect(result).not.toEqual("accept");
+    expect(result).not.toEqual("tomato");
+    expect(result).toEqual("Action");
   });
+
   test("should return a error message if no words are found", () => {
     const result = getRandomWord(10, false, words);
     expect(result).toEqual("No matching words");

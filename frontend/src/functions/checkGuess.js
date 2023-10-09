@@ -1,4 +1,4 @@
-import checkResult from '../data/checkResult'
+import checkResult from '../../data/checkResult'
     /*
         Function that checks the users guess and returns an array 
         with information about each guessed letter if it is

@@ -1,10 +1,10 @@
-export function getRandomWord(
+export default function getRandomWord(
     wordLength: number,
     excludeDuplicates: boolean,
     words: string[]
-  ){
+  ): string{
     
-    let randomWordArray = [""];
+    let randomWordArray = [];
   
     //Remove words that contain the same letter more than once
     function removeDuplicatedLetters() {
@@ -28,8 +28,7 @@ export function getRandomWord(
     
     let randomWord;
     if(randomWordArray.length > 0){
-      randomWord =
-    randomWordArray[Math.floor(Math.random() * randomWordArray.length)];
+      randomWord = randomWordArray[Math.floor(Math.random() * randomWordArray.length)];
     }else{
       randomWord = randomWordArray[0];
     }

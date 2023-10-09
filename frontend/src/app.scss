@@ -1,0 +1,7 @@
+@import 'styles/variables.scss';
+@import 'components/keyboard/keyboard.module.scss';
+
+.centerKeyboard{
+    display: flex;
+    justify-content: center;
+}
