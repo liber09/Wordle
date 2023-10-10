@@ -1,21 +1,21 @@
 import React from "react";
 interface props{
     isCorrect: boolean;
-    exists: boolean;
+    isMisplaced: boolean;
 
 }
-export default function Tile({isCorrect, exists}: props){
+export default function Tile({isCorrect, isMisplaced}: props){
 
     let classNames;
     if (isCorrect){
         classNames = "correct";
     }
-    if (isCorrect === false && exists){
-        classNames = "wrongPlace"
+    if (isCorrect === false && isMisplaced){
+        classNames = "misplaced"
     }
     
     return(
-        <div className = {`tileContainer ${classNames}` }>
+        <div className = {`incorrect ${classNames}` }>
             
         </div>
     );

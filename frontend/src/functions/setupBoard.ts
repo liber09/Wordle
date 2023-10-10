@@ -1,7 +1,8 @@
 export function setupBoard(wordLength: number) {
-    const board: string[][] = [];
-    for (let i = 0; i < wordLength; i++) {
-        board.push(["", "", "", "", ""]);
+    
+    const letterTiles = new Array(wordLength)
+    for(let i = 0; i < wordLength; i++){
+        letterTiles[i] = "";
     }
-    return board;
+    return letterTiles;
   }

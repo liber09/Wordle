@@ -11,6 +11,7 @@ import getRandomWord from "./functions/getRandomWord";
 import Clock from "./components/clock/clock";
 import {Keyboard} from "./components/keyboard/keyboard";
 import GameRow from "./components/gameRow/gameRow";
+import { setupBoard } from "./functions/setupBoard";
 
 export default function App() {
  //   console.log("Test")
@@ -37,6 +38,7 @@ export default function App() {
   const [time, setTime] = useState("00:00:00");
   const [letterGuess, setLetterGuess] = useState("");
 
+  const gameRow = setupBoard(selectLength);
 
   async function getWord() {
     setGameWord(await getRandomWord());
@@ -52,7 +54,7 @@ export default function App() {
         <Clock setTime={setTime} firstWord={letterGuess} />
       </div>
       <div className="centerBoard">
-        <GameRow isCorrect={false} exists={true}></GameRow>
+        <GameRow isCorrect={false} exists={true} letterArray={gameRow}></GameRow>
       </div>
       <div className="centerKeyboard">
         <Keyboard></Keyboard>
