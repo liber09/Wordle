@@ -1,18 +1,16 @@
 import React, { useState, useEffect, Fragment } from "react";
 import "./app.scss";
-import { setupBoard } from "./functions/setupBoard";
-/* import BoardBox from "./component/BoardBox.tsx";
-import { boardStart } from "./functions/boardStart.ts";
-import { Keyboard } from "./component/Keyboard.tsx";
-import { checkGuess } from "./functions/checkGuess.ts";
-import CompletedResult from "./component/CompletedResult.tsx";
-import FailedResult from "./component/FailedResult.tsx";
-import Modal from "./component/Modal.tsx";
-import { retrieveRandomWord } from "./functions/retriveRandomWord.ts"; */
+//import { setupBoard } from "./functions/setupBoard";
+//import { boardStart } from "./functions/boardStart.ts";
+//import { checkGuess } from "./functions/checkGuess.ts";
+//import CompletedResult from "./component/CompletedResult.tsx";
+//import FailedResult from "./component/FailedResult.tsx";
+//import Modal from "./component/Modal.tsx";
 import GameDifficulty from "./components/gameDifficulty/gameDifficulty";
 import getRandomWord from "./functions/getRandomWord";
 import Clock from "./components/clock/clock";
 import {Keyboard} from "./components/keyboard/keyboard";
+import GameRow from "./components/gameRow/gameRow";
 
 export default function App() {
  //   console.log("Test")
@@ -49,8 +47,13 @@ export default function App() {
   }, [selectLength, allowDuplicateLetters]);
 
   return (
-    <div>
-      <Clock setTime={setTime} firstWord={letterGuess} />
+    <div className = "gameContainer">
+      <div className = "clock">
+        <Clock setTime={setTime} firstWord={letterGuess} />
+      </div>
+      <div className="centerBoard">
+        <GameRow isCorrect={false} exists={true}></GameRow>
+      </div>
       <div className="centerKeyboard">
         <Keyboard></Keyboard>
       </div>
