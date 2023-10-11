@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Word guessing game",
   "main": "App.ts",
+  "es-module-specifier-resolution": "node",
   "scripts": {
     "dev": "npx nodemon ./App.ts",
     "test": "NODE_OPTIONS=--experimental-vm-modules NODE_ENV=development jest"
@@ -34,6 +35,9 @@
     "ts-jest": "^29.1.1"
   },
   "dependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.19",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^16.3.1",

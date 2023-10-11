@@ -1,12 +1,12 @@
 import express from "express";
-import randomWord from "./src/server/randomWord";
-import gameSettings from "./src/server/gameSettings";
+import randomWord from "./src/server/randomWord.js";
+import gameSettings from "./src/server/gameSettings.js";
 
 import fs from "fs";
 import cors from "cors";
-import dotenv from "dotenv";
+//import dotenv from "dotenv";
 
-dotenv.config();
+//dotenv.config();
 
 const app = express();
 

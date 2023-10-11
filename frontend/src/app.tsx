@@ -50,6 +50,7 @@ export default function App() {
 
   return (
     <div className = "gameContainer">
+      <p>{gameWord}</p>
       <div className = "clock">
         <Clock setTime={setTime} firstWord={letterGuess} />
       </div>
