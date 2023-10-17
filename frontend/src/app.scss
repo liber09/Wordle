@@ -2,11 +2,21 @@
 @import 'components/keyboard/keyboard.module.scss';
 @import 'components/gameRow/gameRow.module.scss';
 @import 'components/tile/tile.module.scss';
+@import 'components/navbar/navbar.module.scss';
 
+body{
+    background-color: black;
+}
+
+h1{
+    color: hotpink;
+    font-size: 5em;
+    text-align: center;
+}
 .gameContainer{
     display: grid;
-    justify-content: center;
     grid-template-columns: 3fr;
+
 }
 .centerKeyboard{
     display: flex;
@@ -20,10 +30,10 @@
 .clock{
     font-size: 3em;
     text-align: center;
+    color: white;
 }
 
 .gameWord{
-    color: black;
+    color: white;
     font-size: 3em;
 }
-

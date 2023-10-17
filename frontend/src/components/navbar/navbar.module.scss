@@ -1,0 +1,21 @@
+@import '/src/styles/variables.scss';
+
+.navbarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: hotpink;
+    padding: 30px;
+}
+
+.navbarList{
+    display: flex;
+    gap: 50px;
+}
+
+.navbarLink{
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}

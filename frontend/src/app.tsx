@@ -12,6 +12,7 @@ import Clock from "./components/clock/clock";
 import {Keyboard} from "./components/keyboard/keyboard";
 import GameRow from "./components/gameRow/gameRow";
 import { setupBoard } from "./functions/setupBoard";
+import Navbar from "./components/navbar/navbar";
 
 export default function App() {
  //   console.log("Test")
@@ -49,8 +50,11 @@ export default function App() {
   }, [selectLength, allowDuplicateLetters]);
 
   return (
-    <div className = "gameContainer">
-      <p>{gameWord}</p>
+    <div>
+      <Navbar></Navbar>
+      <h1>WORDLE - THE GAME</h1>
+      <div className = "gameContainer">
+      <p className = "gameWord">{gameWord}</p>
       <div className = "clock">
         <Clock setTime={setTime} firstWord={letterGuess} />
       </div>
@@ -61,6 +65,8 @@ export default function App() {
         <Keyboard></Keyboard>
       </div>
     </div>
+    </div>
+    
     
   );
 

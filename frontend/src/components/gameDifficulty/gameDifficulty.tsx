@@ -1,15 +1,15 @@
 import React, { ChangeEvent } from "react";
+
 interface Props {
   selectLength: number;
   setSelectLength: (value: number) => void;
 }
 
-export default function ChooseLength({ selectLength, setSelectLength }: Props) {
+export default function gameDifficulty({ selectLength, setSelectLength }: Props) {
   function newSelectValue(event:any) {
     if(event != null && event.target != null){
       setSelectLength(event.target.value);
     }
-    
   }
 
   return (

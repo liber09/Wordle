@@ -4,7 +4,7 @@ export default function getRandomWord(
     words: string[]
   ): string{
     
-    let randomWordArray = [];
+    let randomWordArray: string[] = [];
   
     //Remove words that contain the same letter more than once
     function removeDuplicatedLetters() {

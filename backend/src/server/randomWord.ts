@@ -1,6 +1,6 @@
 import express from "express";
-import { listOfWords } from "../words/words.js";
-import getRandomWord from "./getRandomWord.js";
+import {listOfWords} from "../words/words.ts";
+import getRandomWord from "./getRandomWord.ts";
 
 const randomWord = express.Router();
 
