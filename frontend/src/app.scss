@@ -13,6 +13,11 @@ h1{
     font-size: 5em;
     text-align: center;
 }
+h2{
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
 .gameContainer{
     display: grid;
     grid-template-columns: 3fr;
@@ -25,10 +30,12 @@ h1{
 .centerBoard{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .clock{
-    font-size: 3em;
+    font-size: 3em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     text-align: center;
     color: white;
 }
@@ -37,3 +44,4 @@ h1{
     color: white;
     font-size: 3em;
 }
+
