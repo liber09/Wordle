@@ -1,6 +1,6 @@
 
 .incorrect{
-    background-color: gray;
+    background-color: red;
     width: 4em;
     height: 4em;
     display: flex;
@@ -9,7 +9,7 @@
 }
 
 .correct{
-    background-color: green;
+    background-color: rgb(2, 255, 2);;
 }
 
 .misplaced{
