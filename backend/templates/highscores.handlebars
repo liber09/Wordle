@@ -1,0 +1,14 @@
+    <div class="highscore-container">
+
+        <h1 class="highscore-head">Fastest Guessers</h1>
+        <ul class="highscore-list">
+        {{#each highscores}} 
+            <li class="highscore-item">
+                <span class="highscore-name">{{this.name}}</span>
+                <span class="highscore-word">{{this.correctWord}}</span>
+                <span class="highscore-time">{{this.duration}}</span>
+            </li>
+        {{/each}}
+        </ul>
+
+    </div>
