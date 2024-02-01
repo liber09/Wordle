@@ -17,7 +17,7 @@ const GuessInput: FC<GuessInputProps> = ({ onSubmit, length }) => {
         setGuessedWord('');
         }
     }}>
-      <input
+      <input className={styles.input}
         type="text"
         maxLength={length}
         value={guessedWord}
