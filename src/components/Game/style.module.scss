@@ -4,7 +4,8 @@
     font-weight: bold;
     margin: .5em;
     justify-content: center;
-    background-color: bisque;
+    background-color: black;
+    color: white;
     border-radius: 10px;
     width: 2em;
     height: 2em;
@@ -15,7 +16,7 @@
         color: yellow;
     }
     &.correct{
-        color: green
+        color: lightgreen;
     }
 }
 .wordContainer{
