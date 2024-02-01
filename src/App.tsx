@@ -2,6 +2,7 @@ import Game from "./components/Game";
 import StartGame from "./components/StartGame";
 import { useState } from "react";
 import DisplayHighscore from "./components/DisplayHighscore";
+import Header from "./components/Header";
 
 type GameProps = {
   id: string;
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <>
+    <Header></Header>
       {screen === "start" && (
         <StartGame
           onStartGame={async (length, multi) => {
