@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #8fafc4;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.header {
+  background-color: bisque;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+.header-nav-items{
+  margin: .5em;
+}
+.header-nav-items-hover{
+    text-decoration: none;
+
+}
+a:hover{
+  text-decoration: underline;
+}
+.about-container{
+  background-color: bisque;
+  border-radius: 5px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 2em;
+}
+.about-paragraph{
+  margin-left: 1em;
+}
+.highscore-container{
+  background-color: bisque;
+  border-radius: 5px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 2em;
+}
+.highscore-head{
+  text-align: center;
+}
+.highscore-list{
+  width: 80%;
+  margin: 0 auto;
+}
+.highscore-item{
+  list-style: none;
+}
+.highscore-name{
+  font-size: 1.5em;
+  margin-right: 1em;
+  font-weight: bold;
+}
+.highscore-word{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: green;
+  margin-right: 1em;
+}
+.highscore-time{
+  font-style: italic;
+}
